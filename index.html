@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Classificatore Teachable Machine</title>
+    <style>
+    #label-container div {
+        font-size: 42px;      /* dimensione grande */
+        font-weight: bold;     /* testo più evidente */
+        margin-top: 5px;       /* piccolo spazio tra le scritte */
+    }
+    </style>
+
+  </head>
+  <body>
+    <h1>Classificatore Teachable Machine</h1>
+    <p>Caricamento modello...</p>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+
+    <!-- 1️⃣ Libreria TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+    <!-- 2️⃣ Libreria Teachable Machine -->
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <!-- 3️⃣ Il tuo script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
